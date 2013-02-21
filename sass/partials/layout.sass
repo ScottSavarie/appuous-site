@@ -1,0 +1,133 @@
+//layout
+
+.l-module, %l-module
+	width: 100%
+	vertical-align: top
+	overflow: hidden
+
+.l-module--spaced, %l-module--spaced
+	@extend %l-module
+	padding: $l-large 0
+
+
+
+.l-container, %l-container
+	width: 80%
+	max-width: 1280px
+	margin: 0 auto
+	display: block
+	overflow: hidden
+
+
+.l-container-spaced, %l-container-spaced
+	@extend %l-container
+	padding: 5em 2px
+
+.l-container-narrow
+	width: 100%
+	max-width: 44em
+	margin: 0 auto
+	display: block
+	overflow: hidden
+	padding: $l-large 0
+
+.l-intro-text, %l-intro-text
+	width: 80%
+	max-width: 40em
+	margin: 0 auto
+	display: block
+	overflow: hidden
+	padding: $l-big 0
+	margin-top: 4em
+
+.l-intro-centered
+	@extend %l-intro-text
+	text-align: center	
+
+.text-center
+	text-align: center
+
+.divider
+	margin: 0 auto
+	max-width: 1280px
+	background-image: url(../img/divider.png)
+	background-repeat: no-repeat
+	height: 1px
+	width: 100%
+	padding: $l-big
+.footer
+	.l-container-spaced
+		padding: 3em 0
+
+
+.has-divider
+	border-bottom: 1px solid #eee
+
+.mt-large
+	margin-top: $l-large
+
+.mt-small
+	margin-top: $l-small	
+
+
+.keycard-bg
+	background: $keycard-bg
+
+.shuzzle-bg
+	background: $shuzzle-bg
+
+
+.text-center
+	text-align: center
+
+.l-half
+	width: 100%
+	@media only screen and (min-width: $second-break)
+		max-width: 48%
+
+
+.content-fl
+	float: left
+	max-width: 100%
+	width: 100%
+	@media only screen and (min-width: $second-break)
+		max-width: 60%
+
+
+.content-fr
+	float: right
+	max-width: 100%
+	width: 100%
+	@media only screen and (min-width: $second-break)
+		max-width: 30%
+		margin-left: $l-large
+
+.social-fr
+	width: 100%
+	max-width: 10em
+	margin-top: $l-large
+	@media only screen and (min-width: $second-break)
+		float: right
+		margin: 0
+		padding-right: $l-thin
+	
+
+.illustration-content-fl
+	margin: 0 auto
+	max-width: 100%
+	width: 100%
+	@media only screen and (min-width: $third-break +3)
+		max-width: 60%
+		float: left
+
+
+.illustration-fr
+	margin: 0 auto
+	max-width: 100%
+	width: 100%
+	@media only screen and (min-width: $third-break +3)
+		max-width: 30%
+		float: right
+
+
+

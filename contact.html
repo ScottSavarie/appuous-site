@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <title>Appuous – Contact</title>
+    <meta name="keywords" content="app, application, mac, keycard, shuzzle, ios, bluetooth, utility" />   
+    <meta name="description" content="Appuous builds Mac and iOS applications." />
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
+    <link rel="stylesheet" href="css/main.css" media="screen" />
+    <!--[if IE 9]><link rel="stylesheet" href="assets/css/ie9.css" media="screen" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" href="assets/css/ie8.css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="assets/css/ie7.css" media="screen" /><![endif]-->
+    <!--   Google Font    -->   
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--   Google Font    -->   
+
+    <!--   Import JS     -->               
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="javascript/global.js"></script>
+    <script src="javascript/validate.min.js"></script>
+    <script src="javascript/modernizr.custom.43884.js"></script>
+    <!--   Import JS     -->  
+
+    <!--   Import Analytics     -->   
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-9482982-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!--   Import Analytics     -->   
+</head> 
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--NAVIGATION-->
+  <section class = "l-module nav-bar">
+    <nav class = "l-container">
+      <a href ="index.html"><img src = "img/appuous-logo-145x27.svg" alt="Appuous Logo" width="145" height="27" class ="logo"></a>
+      <button id = "nav-toggle" class="content-fr">
+        <span class = "nav-icon"></span>
+        <span class = "nav-icon"></span>
+        <span class = "nav-icon"></span>
+      </button>
+      <input type="checkbox" id="toggle">
+      <ul class = "navigation">
+        <li><a href="index.html">home</a></li>
+        <li><a href="products/mac/keycard.html">products</a></li>
+        <li><a href="company.html">company</a></li>
+        <li><a href="consulting.html">consulting</a></li>
+        <li><a href="http://blog.appuous.com">blog</a></li>
+        <li><a class="current" href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </section>
+<!--NAVIGATION-->
+
+<section class = "l-container-spaced has-divider">
+  <div class = "content-fl form-wrapper">
+    <h1>Get in touch with us.</h1>
+    <p>Have questions about one of our products? Want to talk to us about working on a project together? Or you just want to say hi? Give us a hollar!</p>
+  <form id="contact" method="post" action="contact-form-handler.php">
+    <fieldset>    
+      <select name ="category">
+        <option value="General">General</option>
+        <option value="Support">Support</option>
+        <option value="Feedback">Feedback</option>
+      </select>
+      <input type="email" class="input-field" name="email" placeholder="email address">
+      <input type="text" class="input-field" name="name" placeholder="full name">
+      <textarea name="message" class="input-field" placeholder="message"></textarea>
+      <input type="submit" name="submit" id="submit" class = "btn-primary mt-small" value="Send Message" />  
+    </fieldset>
+  </form>
+  <script>
+    var validator = new FormValidator('contact', [{
+        name: 'name',
+        display: 'required',    
+        rules: 'required'
+    },  {
+        name: 'email',
+        rules: 'valid_email'
+    }
+    ], function(errors, event) {
+        if (errors.length > 0) {
+            // Show the errors
+        }
+    });
+
+  </script>
+</div>
+
+<div class ="content-fr contact-sidebar">
+  <h2>Trouble Shooting</h2>
+   <ul class ="job-list">
+    <li>Restart your device(s).</li>
+    <li>Try deleting and re-downloading the app.</li>
+  </ul>
+  <h2 class ="mt-small">Contact Info</h2>
+  <p>
+    <a class = "inline" href="mailto:support@appuous.com">support@appuous.com</a>
+  </p>
+</div>
+
+</section>
+
+
+
+
+
+
+<!--FOOTER-->
+<footer>
+  <section class = "l-container-spaced">
+    <div class="l-container-narrow text-center">
+      <h3>Want to be the first to hear about new apps and exclusive offers?<span class = "emph"> Enter your email below to subscribe to our newsletter.</span></h3>
+    </div>
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup" class = "email-signup">
+<form action="http://appuous.us6.list-manage.com/subscribe/post?u=0d2945658e9e0a204f9b8fe1e&amp;id=15718dbd87" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  
+<div class="mc-field-group">
+  <input type="email" value="" placeholder="email address" name="EMAIL" class="required email" id="mce-EMAIL">
+  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn-secondary">
+</div>
+  <div id="mce-responses" class="clear">
+    <div class="response" id="mce-error-response" style="display:none"></div>
+    <div class="response" id="mce-success-response" style="display:none"></div>
+  </div>  
+</form>
+</div>
+<!--End mc_embed_signup-->
+
+  </section>
+  <section class = "l-module footer">
+    <div class = "l-container-spaced">
+      <p class = "content-fl">Copyright © 2013 Appuous, Inc. All rights reserved.</p>
+      <div class ="social-fr social links"> 
+        <div class="fb-like" data-href="http://www.facebook.com/appuous" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+        <a href="https://twitter.com/appuous" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @appuous</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+  </section>
+</footer>
+
+</body>
+</html>
+    

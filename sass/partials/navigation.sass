@@ -1,0 +1,105 @@
+//navigation
+
+.logo
+	float: left
+	margin-top: $l-large
+
+
+
+.navigation
+	max-height: 0px
+	margin-top: 3.2em
+	padding-top: 1.7em
+	+single-transition (max-height, 0.2s, ease-out)
+	li
+		width: 100%
+		line-height: 2.5
+		border-top: 1px solid $light-grey
+		display: block
+		a:link, a:visited
+			color: $dark-grey
+			display: block
+			font-size: $f-content-text
+			font-weight: 300
+		a:hover, a:focus,
+			color: $blue		
+		.current
+
+			color: $blue !important
+	@media only screen and (min-width: $second-break + 2)
+		display: block	
+
+#toggle
+	position: absolute
+	width: 3em
+	height: 3em
+	top: 23px
+	right: 10%
+	+opacity(0)
+	cursor: pointer
+	@media only screen and (min-width: $second-break + 2)
+		display: none
+#toggle:checked
+	~ul
+		max-height: 1000px
+
+
+#nav-toggle
+	@media only screen and (min-width: $second-break + 2)
+		display: none
+
+.navigation
+	&:hover
+		display: block
+
+
+.nav-bar
+	background-color: $white 
+	@include box-shadow(0 1px 3px rgba(0,0,0,.1))
+
+
+.footer
+	background: $offwhite
+	border-top: 2px solid $light-grey
+	.social-links
+		display: inline-block
+
+
+
+.fb_edge_widget_with_comment
+	float: right !important
+
+.social-links
+	iframe
+		float: right
+		margin-right: $l-small	
+
+
+
+@media only screen and (min-width: $second-break + 2)
+
+	.navigation
+		float: right
+		padding-top: 2.2em
+		padding-bottom: 2.6em
+		margin-top: 0
+		li
+			width: auto
+			line-height: 1
+			border-top: none
+			padding-right: $l-small
+			display: inline
+			&:last-child
+				padding-right: 0
+
+			a:link, a:visited
+				display: inline-block
+
+
+
+
+
+
+
+
+

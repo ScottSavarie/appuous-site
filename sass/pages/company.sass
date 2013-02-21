@@ -1,0 +1,56 @@
+//Consluting
+
+.logo-illu
+	width: 100%
+	max-width: 100%
+	text-align: center
+	display: block
+	margin-top: $l-small
+	margin-bottom: $l-huge	
+	@media only screen and (min-width: $third-break)
+		width: 30%	
+
+.map-illu
+	width: 100%
+	max-width: 100%
+	text-align: center
+	display: block
+	margin-bottom: $l-big
+	p
+		font-size: $f-tiny-text
+		color: $semilight-grey
+		padding-top: $l-large
+		text-align: center
+	@media only screen and (min-width: $third-break)
+		width: 30%
+
+.job-list	
+	@extend %p
+	list-style-type: decimal 
+	padding-left: 1.3em		
+	line-height: 2
+
+
+.release-list
+	list-style-type: none
+	line-height: 2.4
+	span
+		font-weight: 600
+		display: block
+		@media only screen and (min-width: $first-break)
+			display: inline-block
+	a:link, a:visited	
+		@extend %p
+	a:hover, a:focus
+		text-decoration: underline
+
+.presskit-list
+	list-style-type: none
+	line-height: 2.4
+	span
+		font-weight: 600
+	a:link, a:visited	
+		@extend %p
+		color: $blue
+	a:hover, a:focus
+		text-decoration: underline	

@@ -1,0 +1,239 @@
+//Products
+
+
+.product
+	h1,h2,h3,h4,p
+		color: $white 
+		-webkit-font-smoothing: antialiased
+
+.product
+	h2
+		font-weight: 300
+
+.product-nav-container
+	padding: 0
+	padding-top: 1em
+	margin-bottom: 2em
+
+.products-nav
+	display: inline-block
+	width: 19%
+	max-width: 127px
+	padding: 0 4%
+	@media only screen and (min-width: $second-break)
+		padding: 0 8%
+	&:hover
+		.icon-nav
+			+translate3d(0, -0.5em, 0, 0)
+	p
+		font-size: $f-tiny-text
+		color: $semilight-grey
+		font-weight: 600
+		margin-top: $l-small
+
+	&.is-active, &.inactive
+		.icon-nav
+			+translate3d(0, 0, 0, 0)
+		.tooltip
+			display: block	
+
+.music
+	cursor: default
+
+.ios-icon
+	max-width: 16%
+	.tooltip
+		&:before
+			left: 17px
+	@media only screen and (min-width: $first-break)
+		max-width: 110px
+		.tooltip
+			&:before
+				left: 45px
+
+
+
+.tooltip
+	display: none
+	position: absolute
+	&:before
+		content: ""
+		position: absolute
+		width: 20px
+		height: 20px
+		+rotate(45deg)
+		background: $keycard-bg
+		top: 27px
+		left: 24px
+		@media only screen and (min-width: $first-break)
+			left: 54px
+
+.icon-nav
+	+single-transition (0.2s, ease-out)
+
+
+
+
+.product
+	margin-top: $l-small	
+
+
+.app-icon
+	float: right
+	margin-top: -4em	
+	margin-bottom: 2em
+
+
+.text-right
+	width: 80%
+	margin: 0 auto
+	position: relative
+	@media only screen and (min-width: $second-break)
+		width: 41%
+		float: right
+		margin-top: 6%
+		margin-right: 8%
+		margin-left: 3%
+
+.text-left
+	width: 80%
+	margin: 0 auto
+	position: relative
+	@media only screen and (min-width: $second-break)
+		width: 41%
+		float: left
+		margin-top: 6%
+		margin-left: 8%
+		margin-right: 3%		
+
+
+.inactive
+	opacity: 0.65
+
+
+
+//---------------------------Keycard-specific---------------------------//
+
+.keycard-devices
+	float: right
+	margin-top: $l-huge
+	text-align: center
+	@media only screen and (min-width: $second-break)
+		margin-top: 0
+		text-align: right
+
+
+.keycard-intro
+	@media only screen and (min-width: $second-break)	
+		padding-bottom: $l-small
+	.l-half
+		@media only screen and (min-width: $second-break)	
+		padding-top: 5%	
+
+.keycard-last
+	@media only screen and (min-width: $second-break)
+		padding: 5em 2px
+
+
+.macscreen
+	float: left
+
+
+.video-wrapper
+	iframe
+		max-height: 178px
+		height: 20%
+		width: 100%
+		max-width: 100%
+		@media only screen and (min-width: $first-break)
+			max-height: 344px
+			height: 36%
+		@media only screen and (min-width: $second-break)
+			max-width: 390px
+			height: 219px
+
+
+
+.reviews
+	margin-top: $l-large
+	a
+		&:hover
+			img
+				+opacity (1)
+	img
+		+opacity (0.6)
+		display: block
+		padding-bottom: $l-small
+		+single-transition (opacity, 0.2s, ease-out)
+
+	@media only screen and (min-width: $second-break)
+		img
+			display: inline-block
+			vertical-align: middle
+			padding-right: 1em
+
+
+//---------------------------Shuzzle-specific---------------------------//
+
+
+.shuzzle-app
+	.tooltip
+		&:before
+			background: $shuzzle-bg !important
+
+
+.shuzzle-bg
+	.l-half
+		@media only screen and (min-width: $second-break)
+			img
+				max-width: 110%
+
+.shuzzle-intro
+	padding-top: $l-big
+	@media only screen and (min-width: $second-break)
+		padding: 0
+
+
+.image-shift-right
+	float: right
+	// @media only screen and (min-width: $second-break)
+	// 	+translate3d(6em, 0, 0, 0)
+	// @media only screen and (min-width: $second-break)
+	// 	+translate3d(8em, 0, 0, 0)	
+
+
+.image-shift-left
+	float: left
+
+
+
+.shuzzle-list
+	color: $white
+	li
+		margin-top: $l-small
+	@media only screen and (min-width: $third-break)
+		+columns(2)
+		+column-gap(3em)
+		.break
+			+column-break-before(always)
+			padding-top: 1em
+
+
+.shuzzle-graphic-1
+	margin-top: $l-spaced
+	@media only screen and (min-width: $second-break)
+		margin-top: 6em
+
+.shuzzle-graphic-2, .shuzzle-graphic-3, .shuzzle-graphic-4
+	margin-top: $l-spaced
+	
+
+
+
+
+
+
+
+
+
+

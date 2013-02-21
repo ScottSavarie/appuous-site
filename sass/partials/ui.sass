@@ -1,0 +1,209 @@
+//----------------------Buttons----------------------//
+
+.btn-primary, %btn-primary
+	@include border-radius(3px)
+	@include background-clip()
+	background-color: $blue
+	@include box-shadow(0 3px 3px rgba(0,0,0,.17), inset 0 1px 0 rgba(255,255,255,.3))
+	padding: 0 2em
+	display: inline-block
+	height: 3.8em
+	text-align: center
+	line-height: 3.8
+	color: #fff
+	font-size: $f-content-text
+	+single-transition (all, 0.2s, ease-out)
+	&:hover, &:focus
+		@include box-shadow(0 4px 6px rgba(0,0,0,.17), inset 0 1px 0 rgba(255,255,255,.3))
+		background-color: #20a8ff
+	&:active
+		background-color: #3797ef
+		@include box-shadow(inset 0 1px 4px rgba(0,0,0,.43))
+
+.btn-secondary
+	@extend %btn-primary
+	height: 3em
+	line-height: 3
+	padding: 0 1.5em
+
+#nav-toggle
+	padding: $l-small
+	border: 1px solid $light-grey
+	@include border-radius(3px)
+	background: $white
+	margin: $l-large 0 
+	width: 4.2em
+	position: relative
+
+
+.nav-icon
+	width: 2em
+	height: 2px
+	margin-top: 2px
+	background: $semilight-grey
+	display: block
+
+
+//----------------------News----------------------//
+
+
+.blog-news
+	@media only screen and (min-width: $second-break)
+		margin-right: 2px
+	li
+		a
+		display: block
+		padding: 0.75em
+		background: $offwhite
+		@include border-radius(3px)
+		@include box-shadow(inset 0 0 2px rgba(0,0,0,.56))
+		+opacity (0.5)
+		font-size: $f-tiny-text
+		+single-transition (all, 0.2s, ease-out)
+		margin: $l-thin 0
+		&:hover
+			@include background-clip()
+			background-color: #fff
+			@include box-shadow(0 1px 3px rgba(0,0,0,.56))
+			+opacity (1)
+			border: none
+
+
+
+//----------------------Company Popovers----------------------//
+
+
+
+.headshot
+	@include border-radius(3px)
+	@include box-shadow(0 3px 3px rgba(0,0,0,.17), inset 0 1px 0 rgba(255,255,255,.3))
+	+single-transition (all, 0.2s, ease-out)
+
+.employee
+	padding-right: $l-thin
+	li	
+		img
+			max-width: 54px
+		&:hover
+			.headshot
+				@include box-shadow(0 0 7px rgba(0,132,255,.95), inset 0 1px 0 rgba(255,255,255,.5))
+				cursor: pointer
+			.headshot~div
+				display: block
+				
+				
+
+
+
+.pop-over 
+	position: absolute
+	border: 4px solid rgb(255, 255, 255)
+	display: none
+	padding: $l-thin
+	@include background-clip()
+	@include border-radius(3px)
+	background-color: #fff
+	@include box-shadow(0 1px 3px rgba(0,0,0,.56))
+	font-size: $f-tiny-text
+
+	&:before
+		content: ""
+		position: absolute
+		width: 20px
+		height: 20px
+		+rotate(45deg)
+		background: white
+		top: -10px
+		left: 14px
+	&:after
+		content: ""
+		position: absolute
+		width: 20px
+		height: 20px
+		+rotate(45deg)
+		@include box-shadow(0 1px 3px rgba(0,0,0,.56))
+		background: white
+		top: -10px
+		left: 14px
+		z-index: -5
+
+
+
+
+
+//----------------------Form styling----------------------//
+
+
+.email-signup
+	width: 100%
+	max-width: 40em
+	margin: 0 auto
+	text-align: center
+	input
+		font-size: $f-content-text
+		font-family: 'Open Sans', sans-serif
+.email
+	margin-right: $l-thin
+	margin-bottom: $l-thin
+	padding: 0.75em
+	width: 80%
+	max-width: 18em
+	border: 1px solid $light-grey 
+	@include border-radius(3px)
+	@include box-shadow(inset 0 1px 3px rgba(0,0,0,.06))	
+	&:focus
+		@include box-shadow(none)
+		@include box-shadow(0 0 1px 2px rgba(0,132,255,1))
+		outline: none
+
+
+fieldset
+	border: none
+	margin: 0
+	padding: 0
+	margin-top: $l-large
+
+#contact
+	width: 100%
+	margin: 0 auto
+	input, textarea
+		font-size: $f-content-text
+		font-family: 'Open Sans', sans-serif
+.input-field
+	margin-bottom: $l-thin
+	padding: 0.75em 0 0.75em 0.75em
+	width: 95%
+	border: 1px solid $light-grey 
+	@include border-radius(3px)
+	@include box-shadow(inset 0 1px 3px rgba(0,0,0,.06))	
+	&:focus
+		@include box-shadow(none)
+		@include box-shadow(0 0 1px 2px rgba(0,132,255,1))
+		outline: none
+
+
+select
+	margin-bottom: $l-thin
+	height: 3em
+	width: 97%
+	border: 1px solid $light-grey 
+	font-size: $f-content-text
+	font-family: 'Open Sans', sans-serif
+
+
+.toggle-trigger
+	&:hover
+		cursor: pointer
+		h2
+			color: lighten($dark-grey, 50%)
+
+.rotated
+	+rotate(45deg)
+	color: $dark-grey !important
+
+.plus
+	display: inline-block
+	+single-transition (all, 0.2s, ease-out)
+	color: $light-grey
+	float: right
+
