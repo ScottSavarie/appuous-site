@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$l-big".
-        on line 7 of /Users/scottsavarie/Dropbox/Personal/1301-appuous-website/appuous-site/sass/pages/home.sass
+        on line 7 of /Users/scottsavarie/Sites/appuous-site/sass/pages/home.sass
 
 Backtrace:
-/Users/scottsavarie/Dropbox/Personal/1301-appuous-website/appuous-site/sass/pages/home.sass:7
+/Users/scottsavarie/Sites/appuous-site/sass/pages/home.sass:7
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/script/variable.rb:49:in `_perform'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/script/node.rb:40:in `perform'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:294:in `visit_prop'
@@ -76,4 +76,4 @@ org/jruby/RubyKernel.java:1419:in `loop'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$l-big\".\A         on line 7 of /Users/scottsavarie/Dropbox/Personal/1301-appuous-website/appuous-site/sass/pages/home.sass"; }
+  content: "Syntax error: Undefined variable: \"$l-big\".\A         on line 7 of /Users/scottsavarie/Sites/appuous-site/sass/pages/home.sass"; }
