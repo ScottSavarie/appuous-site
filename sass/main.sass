@@ -1,3 +1,5 @@
+
+
 //Import Base Styles
 @import "partials/constants"
 @import "partials/normalize"
@@ -7,6 +9,13 @@
 @import "compass/css3/images"
 @import "compass"
 
+.wf-loading
+  body
+    +opacity(0)
+.wf-active
+  body
+    +transition(opacity, 0.2s, ease-out)
+    +opacity(1)
 
 
 html
