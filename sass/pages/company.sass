@@ -32,6 +32,7 @@
 
 
 .release-list
+	-webkit-font-smoothing: antialiased
 	list-style-type: none
 	line-height: 2.4
 	span
@@ -45,12 +46,8 @@
 		+opacity(0.7)
 
 .presskit-list
+	-webkit-font-smoothing: antialiased
 	list-style-type: none
 	line-height: 2.4
 	span
 		font-weight: 600
-	a:link, a:visited	
-		@extend %p
-		color: $blue
-	a:hover, a:focus
-		+opacity(0.7)
