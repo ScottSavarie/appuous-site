@@ -128,7 +128,7 @@
 		padding-bottom: $l-small
 	.l-half
 		@media only screen and (min-width: $second-break)	
-		padding-top: 5%	
+			padding-top: 5%	
 
 .keycard-last
 	@media only screen and (min-width: $second-break)
@@ -228,12 +228,26 @@
 	margin-top: $l-spaced
 	
 
+//---------------------------Attune-specific---------------------------//
+
+.attune-bg
+	background: $attune-bg
+
+
+.attune-app
+	.tooltip
+		&:before
+			background: $attune-bg !important
 
 
 
 
-
-
-
-
-
+.attune-intro
+	@media only screen and (min-width: $second-break)	
+		padding-bottom: $l-small
+	.l-half
+		@media only screen and (min-width: $second-break)	
+			padding-top: 5%	
+	.first-paragraph
+		@media only screen and (min-width: $third-break)	
+			padding-top: 14%	

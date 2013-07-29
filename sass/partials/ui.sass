@@ -20,6 +20,16 @@
 		background-color: #3797ef
 		@include box-shadow(inset 0 1px 4px rgba(0,0,0,.43))
 
+
+.btn-primary--light
+	@extend %btn-primary
+	background: #35BFE0
+	&:hover, &:focus
+		background: lighten(#35BFE0, 10%)
+	&:active
+		background: #0999BB
+
+
 .btn-secondary
 	@extend %btn-primary
 	height: 2.8em
