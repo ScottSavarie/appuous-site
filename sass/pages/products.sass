@@ -139,7 +139,7 @@
 	float: left
 
 
-.video-wrapper
+.video-wrapper, %video-wrapper
 	iframe
 		max-height: 178px
 		height: 20%
@@ -152,6 +152,12 @@
 			max-width: 390px
 			height: 219px
 
+.video-wrapper--wide
+	@extend %video-wrapper
+	iframe
+		@media only screen and (min-width: $third-break)
+			max-width: 490px
+			height: 275px
 
 
 .reviews
@@ -250,4 +256,4 @@
 			padding-top: 5%	
 	.first-paragraph
 		@media only screen and (min-width: $third-break)	
-			padding-top: 14%	
+			padding-top: 10%	
